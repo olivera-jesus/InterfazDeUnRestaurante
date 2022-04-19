@@ -1,0 +1,33 @@
+﻿<Window x:Class="InterfazDeUnRestaurante.VentanaInicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfazDeUnRestaurante"
+        mc:Ignorable="d"
+        Title="VentanaInicio" Height="450" Width="800">
+    <Grid x:Name="inicio" Background="#F5C178" Margin="2,0,-2,0">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="auto" />
+
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="auto" />
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="BIENVENIDO AL" HorizontalAlignment="Center" FontSize="35" FontFamily="algerian" />
+        <Image HorizontalAlignment="Left" Height="138" Margin="326,10,0,0" VerticalAlignment="Top" Width="194" Source="/res.jpg" Stretch="Fill" StretchDirection="Both" RenderTransformOrigin="0.377,-1.018" Grid.Row="1"/>
+        <TextBlock Text="TE OFRECE:" Margin="303,160,0,0" Grid.Row="1"  FontSize="35" Foreground="Brown" FontFamily="Swis721 Hv BT"  />
+
+        <Button Content="Comida Rapida" HorizontalAlignment="Left" Height="44" Margin="40,247,0,0" Grid.Row="1" VerticalAlignment="Top" Width="206" FontSize="30" Click="Button_Click"/>
+        <Button Content="Comida Tipica" HorizontalAlignment="Left" Height="44" Margin="304,247,0,0" Grid.Row="1" VerticalAlignment="Top" Width="220"  FontSize="30" Click="Button_Click_1"/>
+        <Button Content="Comida Oriental" HorizontalAlignment="Left" Height="44" Margin="552,247,0,0" Grid.Row="1" VerticalAlignment="Top" Width="224"  FontSize="30" Click="Button_Click_2"/>
+        <Button Content="Comida Internacional" HorizontalAlignment="Left" Height="44" Margin="263,317,0,0" Grid.Row="1" VerticalAlignment="Top" Width="302" FontSize="28" Click="Button_Click_3"/>
+    </Grid>
+
+
+
+</Window>
